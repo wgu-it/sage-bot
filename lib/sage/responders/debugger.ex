@@ -7,6 +7,6 @@ defmodule Sage.Responders.Debugger do
   end
 
   respond ~r/who am i\??/i, msg do
-    reply msg, "You are `#{msg.user}`."
+    reply msg, "You are `#{inspect(msg.user)}`."
   end
 end
