@@ -10,6 +10,7 @@ config :sage, Sage.Robot,
     {Hedwig.Responders.Help, []},
     {Hedwig.Responders.Ping, []},
     {Sage.Responders.Courses, []},
+    {Sage.Responders.Overhear, []},
   ]
 
 
