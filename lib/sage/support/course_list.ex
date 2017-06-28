@@ -57,6 +57,10 @@ defmodule Sage.Support.CourseList do
       name: "Business of IT - Applications",
       desc: "This course introduces IT students to information systems (IS). The course includes important topics related to management of information systems (MIS), such as system development, and business continuity. The course also provides an overview of management tools and issue tracking systems."
     ],
+    "C182" => [
+      name: "Introduction to IT",
+      desc: "This course introduces students to information technology as a discipline and the various roles and functions of the IT department as business support. Students are presented with various IT disciplines including systems and services, network and security, scripting and programming, data management, and business of IT, with a survey of technologies in every area and how they relate to each other and to the business."
+    ],
     "C183" => [
       name: "Operating Systems",
       desc: "Students will master installation, configuration, and troubleshooting for one of the world's leading operating systems: Windows 8.1"
