@@ -39,6 +39,17 @@ defmodule Sage.Responders.Triggers do
     send msg, Map.get(@triggers, sanitize(msg.matches[1]))
   end
 
+  @usage """
+  hedwig list triggers - Respond with a list of available triggers
+  """
+  respond ~r/list triggers/, msg do
+    send msg,
+      @triggers
+      |> Map.keys()
+      |> Enum.map(fn trigger -> "`#{@trigger_char}#{trigger}`" end)
+      |> Enum.join(", ")
+  end
+
   # Sanitize the input
   defp sanitize(match) do
     match

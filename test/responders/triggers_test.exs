@@ -16,4 +16,12 @@ defmodule Sage.Responders.TriggersTest do
     assert_receive {:message, %{text: text}}
     assert String.contains?(text, "https://github.com/wgu-it/sage-bot")
   end
+
+  @tag start_robot: true, name: "alfred", responders: [{Sage.Responders.Triggers, []}]
+
+  test "lists triggers", %{adapter: adapter, msg: msg} do
+    send adapter, {:message, %{msg | text: "alfred list triggers"}}
+    assert_receive {:message, %{text: text}}
+    assert String.contains?(text, "`, `!")
+  end
 end

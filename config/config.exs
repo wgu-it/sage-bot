@@ -27,11 +27,11 @@ config :sage, Sage.Robot,
     {Hedwig.Responders.Help, []},
     {Hedwig.Responders.Ping, []},
     {Sage.Responders.Courses, []},
+    {Sage.Responders.Giphy, []},
     {Sage.Responders.Overhear, []},
     {Sage.Responders.Responses, []},
-    {Sage.Responders.Triggers, []},
     {Sage.Responders.Rightgif, []},
-    {Sage.Responders.Giphy, []},
+    {Sage.Responders.Triggers, []},
   ]
 
 config :sage,
