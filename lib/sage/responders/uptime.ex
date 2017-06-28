@@ -11,13 +11,15 @@ defmodule Sage.Responders.Uptime do
   @spec init({String.t(), String.t(), any(), pid()}) :: {:ok, map()}
   def init({aka, name, opts, robot}) do
     :ok = GenServer.cast(self(), :compile_responders)
-
-    {:ok, %{
+    state = %{
       aka: aka,
       name: name,
       opts: opts ++ %{started_at: timestamp()},
       responders: [],
-      robot: robot}}
+      robot: robot
+    }
+
+    {:ok, state}
   end
 
   def timestamp do
@@ -34,6 +36,7 @@ defmodule Sage.Responders.Uptime do
       sec_diff
       |> Duration.from_seconds
       |> Humanized.format
+
     reply msg, "I've been sentient for #{duration}"
   end
 end
