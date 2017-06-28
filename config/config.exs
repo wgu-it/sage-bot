@@ -11,6 +11,8 @@ config :sage, Sage.Robot,
     {Hedwig.Responders.Ping, []},
     {Sage.Responders.Courses, []},
     {Sage.Responders.Overhear, []},
+    {Sage.Responders.Responses, []},
+    {Sage.Responders.Triggers, []},
   ]
 
 
