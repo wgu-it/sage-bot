@@ -32,6 +32,7 @@ config :sage, Sage.Robot,
     {Sage.Responders.Responses, []},
     {Sage.Responders.Rightgif, []},
     {Sage.Responders.Triggers, []},
+    {Sage.Responders.Uptime, []},
   ]
 
 config :sage,

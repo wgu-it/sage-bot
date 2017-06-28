@@ -38,6 +38,7 @@ defmodule Sage.Mixfile do
       {:runtime_config, "~> 0.1"},
       {:httpoison, "~> 0.11.1"},
       {:poison, "~> 3.1"},
+      {:timex, "~> 3.0"},
     ]
   end
 end
