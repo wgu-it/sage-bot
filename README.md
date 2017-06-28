@@ -7,3 +7,5 @@
 - `mix deps.get` to install dependencies
 - `mix run --no-halt` to run the bot locally
 - `mix test` to run the tests
+
+**Please** make sure you have your [editorconfig plugin](http://editorconfig.org/#download) installed in the editor you are using (if a plugin is available).
