@@ -32,8 +32,10 @@ defmodule Sage.Responders.Triggers do
 
   @trigger_matches Map.keys(@triggers) |> Enum.join("|")
 
+  @trigger_char Config.get_env(:sage, :trigger_char, "!")
+
   # Respond with one of the trigger responses... ᕕ( ᐛ )ᕗ
-  hear ~r/^!(#{@trigger_matches})$/i, msg do
+  hear ~r/^#{@trigger_char}(#{@trigger_matches})$/i, msg do
     send msg, Map.get(@triggers, sanitize(msg.matches[1]))
   end
 

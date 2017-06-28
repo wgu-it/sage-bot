@@ -2,20 +2,6 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
-config :sage, Sage.Robot,
-  adapter: Hedwig.Adapters.Slack,
-  name: "sage",
-  aka: "Sage",
-  responders: [
-    {Hedwig.Responders.Help, []},
-    {Hedwig.Responders.Ping, []},
-    {Sage.Responders.Courses, []},
-    {Sage.Responders.Overhear, []},
-    {Sage.Responders.Responses, []},
-    {Sage.Responders.Triggers, []},
-  ]
-
-
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
 # file won't be loaded nor affect the parent project. For this reason,
@@ -34,6 +20,22 @@ config :sage, Sage.Robot,
 #
 #     config :logger, level: :info
 #
+config :sage, Sage.Robot,
+  name: "sage",
+  aka: "Sage",
+  responders: [
+    {Hedwig.Responders.Help, []},
+    {Hedwig.Responders.Ping, []},
+    {Sage.Responders.Courses, []},
+    {Sage.Responders.Overhear, []},
+    {Sage.Responders.Responses, []},
+    {Sage.Responders.Triggers, []},
+    {Sage.Responders.Rightgif, []},
+    {Sage.Responders.Giphy, []},
+  ]
+
+config :sage,
+  trigger_char: "!"
 
 # It is also possible to import configuration files, relative to this
 # directory. For example, you can emulate configuration per environment

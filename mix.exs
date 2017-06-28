@@ -36,6 +36,8 @@ defmodule Sage.Mixfile do
     [
       {:hedwig_slack, "~> 1.0"},
       {:runtime_config, "~> 0.1"},
+      {:httpoison, "~> 0.11.1"},
+      {:poison, "~> 3.1"},
     ]
   end
 end
