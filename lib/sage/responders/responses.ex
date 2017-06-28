@@ -1,4 +1,19 @@
 defmodule Sage.Responders.Responses do
+  @moduledoc """
+  A map of triggers to respond to.
+
+  Usage *is* case-sensitive.
+
+  ### Examples
+
+      User> sage make me a sandwich
+      sage> What? Make it yourself.
+
+      User> sage sudo make me a sandwich
+      sage> Okay.
+
+  """
+
   use Hedwig.Responder
 
   @responses %{

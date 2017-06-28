@@ -1,4 +1,23 @@
 defmodule Sage.Responders.Courses do
+  @moduledoc """
+  Respond with course names and descriptions.
+
+  ### Examples
+
+      User> Man I love C132. It's a blast!
+      sage> *C132*: Elements of Effective Communication
+
+      User> sage describe C132
+      sage> *C132*: Elements of Effective Communication
+      sage> This course introduces learners to elements of communication that
+      are valued in college and beyond. Materials are based on five principles:
+      being aware of communication with yourself and others; using and
+      interpreting verbal messages effectively; using and interpreting nonverbal
+      messages effectively; listening and responding thoughtfully to others, and
+      adapting messages to others appropriately
+
+  """
+
   use Hedwig.Responder
 
   require Logger

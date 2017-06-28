@@ -1,4 +1,21 @@
 defmodule Sage.Responders.Triggers do
+  @moduledoc """
+  A map of triggers to respond to.
+
+  Keep the keys in this module lowercase and with no whitespace.
+
+  However, usage is case-insensitive.
+
+  ### Examples
+
+      User> !hello
+      sage> Hi there!
+
+      User> !NO
+      sage> Noooo! https://www.youtube.com/watch?v=umDr0mPuyQc
+
+  """
+
   use Hedwig.Responder
 
   @triggers %{

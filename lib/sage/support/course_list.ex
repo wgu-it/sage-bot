@@ -1,4 +1,8 @@
 defmodule Sage.Support.CourseList do
+  @moduledoc """
+  The list of courses for IT programs with their names and descriptions.
+  Please keep these in alphanumeric ascending order.
+  """
 
   @courses %{
     "C100" => [
