@@ -5,7 +5,7 @@ defmodule Sage.Responders.GiphyTest do
 
   test "giphy gif", %{adapter: adapter, msg: msg} do
     send adapter, {:message, %{msg | text: "!giphy fun times"}}
-    assert_receive {:message, %{text: text}}, 1000
+    assert_receive {:message, %{text: text}}, 5000
     assert String.contains?(text, "giphy.gif")
   end
 end
