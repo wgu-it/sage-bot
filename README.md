@@ -4,6 +4,8 @@
 
 ## Development
 
+Make sure you have [Elixir](https://elixir-lang.org/install.html) installed.
+
 - `mix deps.get` to install dependencies
 - `mix run --no-halt` to run the bot locally
 - `mix test` to run the tests
