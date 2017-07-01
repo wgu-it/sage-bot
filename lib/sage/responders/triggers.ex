@@ -28,6 +28,8 @@ defmodule Sage.Responders.Triggers do
     "contributing" => "To help me get better you can *fork* https://github.com/wgu-it/sage-bot, *commit* your changes, and then make a *pull request*!",
     "googledrive" => "Repo with eBooks and More! Sign up with your @wgu.edu email address. https://drive.google.com/folderview?id=0B1S7OJNChk1-cWhwNWZTb2JNY1E",
     "ugt" => "UGT (abbr.): Universal Greeting Time.\n_UGT_ is a convention that states that it is always morning when person comes into a channel, and it is always late night when person leaves. Local time of any member of channel is irrelevant.",
+    "y" => "http://i.imgur.com/yZRYrIF.jpg",
+    "bcuz" => "http://i.imgur.com/j6nbopM.png",
   }
 
   @trigger_matches Map.keys(@triggers) |> Enum.join("|")
