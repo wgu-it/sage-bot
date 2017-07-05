@@ -7,9 +7,9 @@ defmodule Sage.Responders.Trout do
   """
   respond ~r/slap (?:me|(.+))$/i, msg do
     if msg.matches[1] do
-      send msg, "/me slaps #{msg.matches[1]} around a bit with a large trout"
+      send msg, "_slaps #{msg.matches[1]} around a bit with a large trout_"
     else
-      send msg, "/me slaps you around a bit with a large trout"
+      send msg, "_slaps you around a bit with a large trout_"
     end
   end
 
