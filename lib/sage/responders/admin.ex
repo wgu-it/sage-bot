@@ -18,7 +18,7 @@ defmodule Sage.Responders.Admin do
   Check if the user is an admin.
   """
   @spec is_admin?(Hedwig.User.t) :: boolean
-  def is_admin?(%{name: name}) when is_binary(user) do
+  def is_admin?(%{name: name}) do
     Config.get_env(:sage, :admins, "")
     |> String.split(",")
     |> Enum.any?(&String.equivalent?(&1, name))
