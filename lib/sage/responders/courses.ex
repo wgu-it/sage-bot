@@ -25,7 +25,7 @@ defmodule Sage.Responders.Courses do
   alias Sage.Support.CourseList
 
   @usage """
-  <code> - Responds with the course code and name
+  `<course code>` - Responds with the course code and name
   """
   hear ~r/(?:[a-zA-Z]{1,3})(?:\s|-)?(?:[0-9]{1,4})/i, msg do
     code = sanitize(msg.matches[0])

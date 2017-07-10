@@ -5,14 +5,14 @@ defmodule Sage.Responders.Rightgif do
   @trigger_char Config.get_env(:sage, :trigger_char, "!")
 
   @usage """
-  *#{@trigger_char}gif <text>* - Respond with a relevant gif
+  `#{@trigger_char}gif <text>` - Respond with a relevant gif
   """
   hear ~r/^#{@trigger_char}(?:gif|animate)(?: me)? (.*)/i, msg do
     send msg, fetch_gif(msg.matches[1])
   end
 
   @usage """
-  *hedwig gif me <text>* - Respond with a relevant gif
+  `hedwig gif me <text>` - Respond with a relevant gif
   """
   respond ~r/(?:gif|animate)(?: me)? (.*)/i, msg do
     send msg, fetch_gif(msg.matches[1])

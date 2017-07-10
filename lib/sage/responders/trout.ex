@@ -3,7 +3,7 @@ defmodule Sage.Responders.Trout do
   require Logger
 
   @usage """
-  bubo slap me - slaps you around a bit with a large trout
+  `bubo slap me` - slaps you around a bit with a large trout
   """
   respond ~r/slap (?:me|(.+))$/i, msg do
     if msg.matches[1] do
