@@ -40,7 +40,7 @@ defmodule Sage.Responders.Courses do
   end
 
   @usage """
-  hedwig describe <code> - Responds with the course description
+  `hedwig describe <code>` - Responds with the course description
   """
   respond ~r/describe (([a-zA-Z]{1,3})(?:\s|-)?([0-9]{1,4}))/i, msg do
     code = sanitize(msg.matches[1])

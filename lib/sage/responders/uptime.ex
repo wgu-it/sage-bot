@@ -28,7 +28,7 @@ defmodule Sage.Responders.Uptime do
   end
 
   @usage """
-  hedwig uptime - Show bot uptime
+  `hedwig uptime` - Show bot uptime
   """
   respond ~r/uptime$/i, msg, state do
     sec_diff = timestamp() - state.opts.started_at

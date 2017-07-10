@@ -42,7 +42,7 @@ defmodule Sage.Responders.Triggers do
   end
 
   @usage """
-  hedwig list triggers - Respond with a list of available triggers
+  `hedwig list triggers` - Respond with a list of available triggers
   """
   respond ~r/list triggers/, msg do
     send msg,
