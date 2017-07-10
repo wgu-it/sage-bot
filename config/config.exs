@@ -26,6 +26,7 @@ config :sage, Sage.Robot,
   responders: [
     {Hedwig.Responders.Help, []},
     {Hedwig.Responders.Ping, []},
+    {Sage.Responders.Admin, []},
     {Sage.Responders.Courses, []},
     {Sage.Responders.Debugger, []},
     {Sage.Responders.Giphy, []},
@@ -39,7 +40,9 @@ config :sage, Sage.Robot,
   ]
 
 config :sage,
-  trigger_char: "!"
+  trigger_char: "!",
+  admins: {:system, "WGUIT_ADMINS"},
+  deployhook: {:system, "DEPLOYHOOK"}
 
 # It is also possible to import configuration files, relative to this
 # directory. For example, you can emulate configuration per environment
