@@ -3,7 +3,7 @@ defmodule Sage.Responders.Uptime do
   `hedwig uptime` Displays how long the bot has been running
   """
 
-  use Hedwig.Responder
+  use Sage.Responder
 
   alias Timex.Duration
   alias Timex.Format.Duration.Formatters.Humanized

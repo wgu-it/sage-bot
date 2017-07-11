@@ -1,5 +1,5 @@
 defmodule Sage.Responders.Admin do
-  use Hedwig.Responder
+  use Sage.Responder
 
   require Logger
 

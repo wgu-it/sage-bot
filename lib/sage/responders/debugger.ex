@@ -1,5 +1,5 @@
 defmodule Sage.Responders.Debugger do
-  use Hedwig.Responder
+  use Sage.Responder
   require Logger
 
   respond ~r/debug (.+)/i, msg do

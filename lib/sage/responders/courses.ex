@@ -18,7 +18,7 @@ defmodule Sage.Responders.Courses do
 
   """
 
-  use Hedwig.Responder
+  use Sage.Responder
 
   require Logger
 

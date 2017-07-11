@@ -14,7 +14,7 @@ defmodule Sage.Responders.Responses do
 
   """
 
-  use Hedwig.Responder
+  use Sage.Responder
 
   @responses %{
     "make me a sandwich" => "What? Make it yourself.",

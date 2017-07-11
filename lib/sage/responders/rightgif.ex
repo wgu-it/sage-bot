@@ -1,5 +1,5 @@
 defmodule Sage.Responders.Rightgif do
-  use Hedwig.Responder
+  use Sage.Responder
   require Logger
 
   @trigger_char Config.get_env(:sage, :trigger_char, "!")

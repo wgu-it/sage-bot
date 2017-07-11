@@ -16,7 +16,7 @@ defmodule Sage.Responders.Triggers do
 
   """
 
-  use Hedwig.Responder
+  use Sage.Responder
 
   @triggers %{
     "hello" => "Hi there!",

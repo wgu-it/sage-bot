@@ -12,7 +12,7 @@ defmodule Sage.Responders.Overhear do
 
   """
 
-  use Hedwig.Responder
+  use Sage.Responder
 
   # High five
   hear ~r/^\^5 (.+)$/, msg do
