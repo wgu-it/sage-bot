@@ -14,10 +14,10 @@ defmodule Channel do
 
   ## Examples
 
-      iex> Channel.in_whitelist?("C0Z77BT8V")
+      iex> Channel.whitelisted?("C0Z77BT8V")
       true
 
-      iex> Channel.in_whitelist?("C14CFRRTL")
+      iex> Channel.whitelisted?("C14CFRRTL")
       false
 
   """
