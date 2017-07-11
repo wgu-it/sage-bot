@@ -7,7 +7,7 @@ defmodule Sage.Responders.SillyResponses do
   hedwig slap <target> - slaps <target> around a bit with a large trout
   """
   respond ~r/slap (?:me|([^\s]+))$/i, msg do
-    target = Map.get(msg.matches, 1, "you")
+    target = Map.get(msg.matches, 1, get_username(msg.user))
     size = Enum.random(["laughably tiny", "small", "medium-sized", "large", "ridiculously huge"])
     fish = Enum.random(["trout", "lamprey", "tuna", "arctic char", "clown goby"])
     if Regex.match?(~r/^bubo$/i, target) do
@@ -24,4 +24,7 @@ defmodule Sage.Responders.SillyResponses do
       send msg, "https://www.youtube.com/watch?v=hAEQvlaZgKY"
     end
   end
+
+  defp get_username(user) when is_binary(user), do: user
+  defp get_username(%{name: name}), do: name
 end
