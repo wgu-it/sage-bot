@@ -10,7 +10,11 @@ defmodule Sage.Responders.SillyResponses do
     target = Map.get(msg.matches, 1, "you")
     size = Enum.random(["laughably tiny", "small", "medium-sized", "large", "ridiculously huge"])
     fish = Enum.random(["trout", "lamprey", "tuna", "arctic char", "clown goby"])
-    maybe_send msg, "_slaps #{target} around a bit with a #{size} #{fish}_"
+    if Regex.match?(~r/^bubo$/i, target) do
+      reply msg, "I don't think so ಠ_ಠ"
+    else
+      maybe_send msg, "_slaps #{target} around a bit with a #{size} #{fish}_"
+    end
   end
 
   hear ~r/^just do it(?:,? ([^\s]+))?/, msg do
