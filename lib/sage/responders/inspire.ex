@@ -3,7 +3,7 @@ defmodule Sage.Responders.Inspire do
   require Logger
 
   @usage """
-  hedwig inspire me - Responds with an inspirational image
+  `hedwig inspire me` - Responds with an inspirational image
   """
   respond ~r/inspire (?:me|(.+))$/i, msg do
     if msg.matches[1] do
