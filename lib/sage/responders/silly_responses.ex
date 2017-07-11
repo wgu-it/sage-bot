@@ -8,7 +8,7 @@ defmodule Sage.Responders.SillyResponses do
   """
   respond ~r/slap (?:me|([^\s]+))$/i, msg do
     target = Map.get(msg.matches, 1, "you")
-    size = Enum.random(["laughably tiny", "small", "medium", "large", "ridiculously huge"])
+    size = Enum.random(["laughably tiny", "small", "medium-sized", "large", "ridiculously huge"])
     fish = Enum.random(["trout", "lamprey", "tuna", "arctic char", "clown goby"])
     maybe_send msg, "_slaps #{target} around a bit with a #{size} #{fish}_"
   end
