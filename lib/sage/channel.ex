@@ -23,7 +23,7 @@ defmodule Channel do
   """
   def whitelisted?(nil), do: true
   def whitelisted?(channel_id) do
-    Enum.any?(channels(), channel_id)
+    Enum.any?(channels(), &String.equivalent?(&1, channel_id))
   end
 
   @doc """
