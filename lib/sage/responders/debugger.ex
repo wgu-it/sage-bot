@@ -6,11 +6,11 @@ defmodule Sage.Responders.Debugger do
     reply msg, "`#{msg.matches[1]}`"
   end
 
-  respond ~r/what room( is (this|it))?\??/i, msg do
-    reply msg, "We are in `#{msg.room}`."
+  respond ~r/where ?am ?i\??/i, msg do
+    reply msg, "You are in `#{msg.room}`."
   end
 
-  respond ~r/who am i\??/i, msg do
+  respond ~r/who ?am ?i\??/i, msg do
     reply msg, "You are `#{inspect(msg.user)}`."
   end
 end

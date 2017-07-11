@@ -4,8 +4,8 @@ defmodule Sage.Responders.DebuggerTest do
   @tag start_robot: true, name: "alfred", responders: [{Sage.Responders.Debugger, []}]
 
   test "replies with the room", %{adapter: adapter, msg: msg} do
-    send adapter, {:message, %{msg | text: "alfred what room is this?"}}
+    send adapter, {:message, %{msg | text: "alfred where am i?"}}
     assert_receive {:message, %{text: text}}
-    assert String.contains?(text, "We are in")
+    assert String.contains?(text, "You are in")
   end
 end

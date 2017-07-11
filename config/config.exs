@@ -34,8 +34,8 @@ config :sage, Sage.Robot,
     {Sage.Responders.Overhear, []},
     {Sage.Responders.Responses, []},
     {Sage.Responders.Rightgif, []},
+    {Sage.Responders.SillyResponses, []},
     {Sage.Responders.Triggers, []},
-    {Sage.Responders.Trout, []},
     {Sage.Responders.Uptime, []},
   ]
 

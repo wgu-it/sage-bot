@@ -1,5 +1,5 @@
 defmodule Sage.Responders.Inspire do
-  use Hedwig.Responder
+  use Sage.Responder
   require Logger
 
   @usage """
@@ -7,9 +7,9 @@ defmodule Sage.Responders.Inspire do
   """
   respond ~r/inspire (?:me|(.+))$/i, msg do
     if msg.matches[1] do
-      send msg, "#{msg.matches[1]}: #{fetch_img()}"
+      maybe_send msg, "#{msg.matches[1]}: #{fetch_img()}"
     else
-      send msg, fetch_img()
+      maybe_send msg, fetch_img()
     end
   end
 
