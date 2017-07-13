@@ -6,7 +6,7 @@ defmodule Sage.Responders.SillyResponses do
   @usage """
   hedwig slap <target> - slaps <target> around a bit with a large trout
   """
-  respond ~r/slap (?:me|([^\s]+))$/i, msg do
+  respond ~r/slap (?:me|([^\s]+))\s*$/i, msg do
     target = Map.get(msg.matches, 1, get_username(msg.user))
     size = Enum.random(["laughably tiny", "small", "medium-sized", "large", "ridiculously huge"])
     fish = Enum.random(["trout", "lamprey", "tuna", "arctic char", "clown goby"])
@@ -20,12 +20,12 @@ defmodule Sage.Responders.SillyResponses do
   @usage """
   bubo flip [a coin] - Flips a coin
   """
-  respond ~r/flip.*/, msg do
+  respond ~r/flip( a coin)?\s*$/, msg do
     coin = Enum.random(["*heads*", "*tails*"])
     send msg, "I flipped a coin for #{get_username(msg.user)} and it landed #{coin}!"
   end
 
-  hear ~r/^just do it(?:,? ([^\s]+))?/, msg do
+  hear ~r/^just do it(?:,? ([^\s]+))?\s*/, msg do
     if msg.matches[1] do
       send msg, "#{msg.matches[1]}: https://www.youtube.com/watch?v=hAEQvlaZgKY"
     else
