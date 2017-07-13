@@ -24,4 +24,17 @@ defmodule Sage.Responders.SillyResponsesTest do
     assert_receive {:message, %{text: text}}, 500
     assert String.contains?(text, "I don't think so ಠ_ಠ")
   end
+
+  @tag start_robot: true, name: "alfred", responders: [{Sage.Responders.SillyResponses, []}]
+
+  test "flips a coin", %{adapter: adapter, msg: msg} do
+    send adapter, {:message, %{msg | text: "alfred flip a coin"}}
+    assert_receive {:message, %{text: text}}, 500
+    "I flipped a coin for shalmezad and it landed *heads*!"
+    assert String.contains?(text, "I flipped a coin for")
+    assert String.contains?(text, "and it landed")
+    assert String.contains?(text, "heads") || String.contains?(text, "tails")
+  end
+
+
 end
