@@ -17,6 +17,14 @@ defmodule Sage.Responders.SillyResponses do
     end
   end
 
+  @usage """
+  bubo flip [a coin] - Flips a coin
+  """
+  respond ~r/flip.*/, msg do
+    coin = Enum.random(["*heads*", "*tails*"])
+    send msg, "I flipped a coin for #{get_username(msg.user)} and it landed #{coin}!"
+  end
+
   hear ~r/^just do it(?:,? ([^\s]+))?/, msg do
     if msg.matches[1] do
       send msg, "#{msg.matches[1]}: https://www.youtube.com/watch?v=hAEQvlaZgKY"
