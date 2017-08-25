@@ -31,6 +31,7 @@ defmodule Sage.Responders.Triggers do
     "ugt" => "UGT (abbr.): Universal Greeting Time.\n_UGT_ is a convention that states that it is always morning when person comes into a channel, and it is always late night when person leaves. Local time of any member of channel is irrelevant.",
     "y" => "http://i.imgur.com/yZRYrIF.jpg",
     "bcuz" => "http://i.imgur.com/j6nbopM.png",
+    "freebook" => "Get your free book of the day here! https://www.packtpub.com/packt/offers/free-learning",
   }
 
   @trigger_matches Map.keys(@triggers) |> Enum.join("|")
