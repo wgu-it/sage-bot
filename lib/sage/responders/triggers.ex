@@ -33,6 +33,7 @@ defmodule Sage.Responders.Triggers do
     "y" => "http://i.imgur.com/yZRYrIF.jpg",
     "bcuz" => "http://i.imgur.com/j6nbopM.png",
     "freebook" => "Get your free book of the day here! https://www.packtpub.com/packt/offers/free-learning",
+    "pluralsight" => "Get free access to Pluralsight and Codeschool here: https://lrps.wgu.edu/provision/114583870",
   }
 
   @trigger_matches Map.keys(@triggers) |> Enum.join("|")
