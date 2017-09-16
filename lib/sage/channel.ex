@@ -7,6 +7,7 @@ defmodule Channel do
     "C0Z77BT8V", # random
     "G5YGDFA07", # bubo-test
     "C5YHBTNG6", # testing
+    "C757ANLSK", # inspire
   ]
 
   @doc """
