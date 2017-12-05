@@ -385,6 +385,10 @@ defmodule Sage.Support.CourseList do
       name: "Data Analytics Graduate Capstone",
       desc: "The Data Analytics Graduate Capstone course allows the student to demonstrate their application of the academic and professional abilities developed as a graduate student. The capstone challenges students to integrate skills and knowledge from several program domains into one project."
     ],
+    "C773" => [
+      name: "User Interface Design",
+      desc: "This course prepares you for the CIW User Interface Designer certification. This course assumes an existing knowledge of HTML5 (Hypertext Markup Language) and CSS (cascading stylesheets) and covers material such as web design principles, typography, wireframing, and SEO."
+    ],
     "C777" => [
       name: "Web Development Applications",
       desc: "This course prepares students for the CIW Advanced HTML5 and CSS3 Specialist certification exam. This course builds upon a student's manual coding skills by teaching how to develop web documents and pages using the Web Development Trifecta: HTML5 (Hypertext Markup Language version 5) and CSS3 (Cascading Style Sheets version 3) and JavaScript. Students will utilize the skills learned in this course to create web documents and pages that easily adapt to display on both traditional and mobile devices. In addition, students will learn techniques for code validation and testing, form creation, inline form field validation, and mobile design for browsers and apps, including Responsive Web Design (RWD)"
