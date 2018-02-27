@@ -441,6 +441,10 @@ defmodule Sage.Support.CourseList do
       name: "Business of IT - Applications",
       desc: "Business of IT – Applications examines Information Technology Infrastructure Library (ITIL) terminology, structure, policies, and concepts. Focusing on the management of Information Technology (IT) infrastructure, development, and operations, students will explore the core principles of ITIL practices for service management to prepare them for careers as IT professionals, business managers, and business process owners. This course has no prerequisites."
     ],
+    "C857" => [
+      name: "Software Quality Assurance",
+      desc: "Software Quality Assurance applies a QA focus to every phase of the software development life cycle. This course investigates best practices for quality analysis, quality planning, and testing strategies as they pertain to the everyday practice of software development. Students will come to understand how their work fits into the bigger picture: how QA, testing, and code-writing practices interact within specific process models; the potential impact of new code on existing code or on other applications; the importance of usability and the influence users have on the ultimate success of an application. Students will explore test plans, test cases, unit tests, integration tests, regression tests, usability tests, and test and review tools."
+    ],
     "CNV1" => [
       name: "Designing Customized Security",
       desc: "Designing Customized Security outlines the sequence of learning activities to help students develop competence in the subject area of securing networks, which deals specifically with Cisco networks. It prepares students for the Cisco 640-553 IINS certification exam."
