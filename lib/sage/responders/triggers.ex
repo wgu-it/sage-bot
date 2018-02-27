@@ -36,6 +36,8 @@ defmodule Sage.Responders.Triggers do
     "pluralsight" => "Get free access to Pluralsight and Codeschool here: https://lrps.wgu.edu/provision/114583870",
     "skillsoft" => "Access to SkillSoft: https://lrps.wgu.edu/provision/102605",
     "labsim" => "Access Net+ Labsim via: http://lrps.wgu.edu/provision/6147901 and Sec+ via: https://lrps.wgu.edu/provision/42540372",
+    "noice" => "https://www.youtube.com/watch?v=h3uBr0CCm58",
+    "noice-kp" => "https://www.youtube.com/watch?v=rQnYi3z56RE&t=5s"
   }
 
   @trigger_matches Map.keys(@triggers) |> Enum.join("|")
