@@ -19,6 +19,8 @@ defmodule Sage.Responders.Responses do
   @responses %{
     "make me a sandwich" => "What? Make it yourself.",
     "sudo make me a sandwich" => "Okay.",
+    "thanks bubo" => "You're welcome.",
+    "bubo is mean" => "Only to retro.",
   }
 
   @response_matches Map.keys(@responses) |> Enum.join("|")
