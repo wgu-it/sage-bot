@@ -32,12 +32,12 @@ defmodule Sage.Responders.Triggers do
     "ugt" => "UGT (abbr.): Universal Greeting Time.\n_UGT_ is a convention that states that it is always morning when person comes into a channel, and it is always late night when person leaves. Local time of any member of channel is irrelevant.",
     "y" => "http://i.imgur.com/yZRYrIF.jpg",
     "bcuz" => "http://i.imgur.com/j6nbopM.png",
-    "freebook" => &Sage.Responders.Triggers.getbook/0,
     "pluralsight" => "Get free access to Pluralsight and Codeschool here: https://lrps.wgu.edu/provision/114583870",
     "skillsoft" => "Access to SkillSoft: https://lrps.wgu.edu/provision/102605",
     "labsim" => "Access Net+ Labsim via: http://lrps.wgu.edu/provision/6147901 and Sec+ via: https://lrps.wgu.edu/provision/42540372",
     "noice" => "https://www.youtube.com/watch?v=h3uBr0CCm58",
-    "noice-kp" => "https://www.youtube.com/watch?v=rQnYi3z56RE&t=5s"
+    "noice-kp" => "https://www.youtube.com/watch?v=rQnYi3z56RE&t=5s",
+    "freebook" => ""
   }
 
   @trigger_matches Map.keys(@triggers) |> Enum.join("|")
@@ -46,7 +46,13 @@ defmodule Sage.Responders.Triggers do
 
   # Respond with one of the trigger responses... ᕕ( ᐛ )ᕗ
   hear ~r/^#{@trigger_char}(#{@trigger_matches})$/i, msg do
-    send msg, Map.get(@triggers, sanitize(msg.matches[1]))
+    cond do
+     to_string(msg.matches[1]) == "freebook" ->
+      send msg, to_string(getbook)
+     to_string(msg.matches[1]) != "freebook" ->
+      send msg, Map.get(@triggers, sanitize(msg.matches[1]))
+    end
+
   end
 
   @usage """
@@ -67,14 +73,16 @@ defmodule Sage.Responders.Triggers do
   end
 
   def getbook do
-    HTTPoison.start
-    bookpage = HTTPoison.get! "https://www.packtpub.com/packt/offers/free-learning"
-    title = Floki.find(bookpage.body, ".dotd-title h2")
+    Application.ensure_all_started :inets
+
+    {:ok, resp} = :httpc.request(:get, {'https://www.packtpub.com/packt/offers/free-learning', []}, [], [body_format: :binary])
+    {{_, 200, 'OK'}, _headers, body} = resp
+    title = Floki.find(body, ".dotd-title h2")
     |> Floki.text()
     |> String.trim()
-    description = Floki.find(bookpage.body, ".dotd-main-book-summary div:nth-of-type(3)")
+    description = Floki.find(body, ".dotd-main-book-summary div:nth-of-type(3)")
     |> Floki.text()
     |> String.trim()
-    title <> "\n" <> description <> "\nhttps://www.packtpub.com/packt/offers/free-learning"
+    result = "Today's free book is: \n" <> title <> "\n" <> description <> "\nhttps://www.packtpub.com/packt/offers/free-learning"
   end
 end
