@@ -39,6 +39,7 @@ defmodule Sage.Mixfile do
       {:httpoison, "~> 0.11.1"},
       {:poison, "~> 3.1"},
       {:timex, "~> 3.0"},
+      {:floki, "~> 0.20.0"},
     ]
   end
 end

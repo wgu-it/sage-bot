@@ -32,7 +32,8 @@ defmodule Sage.Responders.Triggers do
     "ugt" => "UGT (abbr.): Universal Greeting Time.\n_UGT_ is a convention that states that it is always morning when person comes into a channel, and it is always late night when person leaves. Local time of any member of channel is irrelevant.",
     "y" => "http://i.imgur.com/yZRYrIF.jpg",
     "bcuz" => "http://i.imgur.com/j6nbopM.png",
-    "freebook" => "Get your free book of the day here! https://www.packtpub.com/packt/offers/free-learning",
+    #"freebook" => "Get your free book of the day here! https://www.packtpub.com/packt/offers/free-learning",
+    "freebook" => &Sage.Responders.Triggers.getbook/0,
     "pluralsight" => "Get free access to Pluralsight and Codeschool here: https://lrps.wgu.edu/provision/114583870",
     "skillsoft" => "Access to SkillSoft: https://lrps.wgu.edu/provision/102605",
     "labsim" => "Access Net+ Labsim via: http://lrps.wgu.edu/provision/6147901 and Sec+ via: https://lrps.wgu.edu/provision/42540372",
@@ -64,5 +65,17 @@ defmodule Sage.Responders.Triggers do
   defp sanitize(match) do
     match
     |> String.downcase()
+  end
+
+  def getbook do
+    HTTPoison.start
+    bookpage = HTTPoison.get! "https://www.packtpub.com/packt/offers/free-learning"
+    title = Floki.find(bookpage.body, ".dotd-title h2")
+    |> Floki.text()
+    |> String.trim()
+    description = Floki.find(bookpage.body, ".dotd-main-book-summary div:nth-of-type(3)")
+    |> Floki.text()
+    |> String.trim()
+    title <> "\n" <> description <> "\nhttps://www.packtpub.com/packt/offers/free-learning"
   end
 end
