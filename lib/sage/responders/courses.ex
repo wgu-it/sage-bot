@@ -29,7 +29,7 @@ defmodule Sage.Responders.Courses do
   """
   hear ~r/(?:[a-zA-Z]{1,3})(?:\s|-)?(?:[0-9]{1,4})/i, msg do
     matches = Regex.scan(~r/(?:[a-zA-Z]{1,3})(?:\s|-)?(?:[0-9]{1,4})/i, msg.text)
-    Enum.each(matches, fn x-> send msg, compile(x) end)
+    Enum.each(matches, fn x-> if(compile(x) != :error) do send msg, compile(x) end end)
   end
 
   @usage """
@@ -62,7 +62,7 @@ defmodule Sage.Responders.Courses do
         "*#{match}*: #{course[:name]}"
       nil ->
         Logger.warn "No match"
-        :ok
+        :error
     end
   end
 end

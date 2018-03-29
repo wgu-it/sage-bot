@@ -20,6 +20,10 @@ defmodule Sage.Responders.Overhear do
     emote msg, "high fives #{recipient}"
   end
 
+  hear ~r/^joined #testing/, msg do
+    emote msg, "debug"
+  end
+
   # Motivational video
   hear ~r/^just do it,?(?: (\w+))?$/, msg do
     if msg.matches[1] do
