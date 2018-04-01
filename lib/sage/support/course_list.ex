@@ -441,6 +441,10 @@ defmodule Sage.Support.CourseList do
       name: "Business of IT - Applications",
       desc: "Business of IT – Applications examines Information Technology Infrastructure Library (ITIL) terminology, structure, policies, and concepts. Focusing on the management of Information Technology (IT) infrastructure, development, and operations, students will explore the core principles of ITIL practices for service management to prepare them for careers as IT professionals, business managers, and business process owners. This course has no prerequisites."
     ],
+    "C850" => [
+      name: "Emerging Technologies",
+      desc: "The Emerging Technology course examines emerging technologies, identifies the benefits and drawbacks of technology adoption, and provides students with a process to evaluate technologies. The course will examine three technologies that may have an impact on Information Technology services in the coming years."
+    ],
     "C851" => [
       name: "Linux Foundations",
       desc: "Linux Foundations is an introduction to Linux as an operating system as well as an introduction to open source concepts and the basics of the Linux command line. Expert content, a Linux virtual machine, and step-by-step labs give you hands-on access to practice Linux command line concepts. Linux is widely used in different industries for all kinds of functions including web servers, firewalls, and graphic design, and provides robust functionality and a stable, secure environment that is not often found in any other client operating system."
