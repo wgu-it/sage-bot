@@ -449,6 +449,10 @@ defmodule Sage.Support.CourseList do
       name: "Linux Foundations",
       desc: "Linux Foundations is an introduction to Linux as an operating system as well as an introduction to open source concepts and the basics of the Linux command line. Expert content, a Linux virtual machine, and step-by-step labs give you hands-on access to practice Linux command line concepts. Linux is widely used in different industries for all kinds of functions including web servers, firewalls, and graphic design, and provides robust functionality and a stable, secure environment that is not often found in any other client operating system."
     ],
+     "C856" => [
+      name: "User Experience Design",
+      desc: "User Experience Design explores multiple tools and techniques used in user experience design. Students are presented with an in-depth view of activities involved in the design of user experience and have the opportunity to create several deliverables including persona profiles, information architectures, and prototypes of different levels of fidelity. In addition, the course also covers usability testing and the evaluation of quantitative and qualitative data derived from these and other experiments."
+    ],
     "C857" => [
       name: "Software Quality Assurance",
       desc: "Software Quality Assurance applies a QA focus to every phase of the software development life cycle. This course investigates best practices for quality analysis, quality planning, and testing strategies as they pertain to the everyday practice of software development. Students will come to understand how their work fits into the bigger picture: how QA, testing, and code-writing practices interact within specific process models; the potential impact of new code on existing code or on other applications; the importance of usability and the influence users have on the ultimate success of an application. Students will explore test plans, test cases, unit tests, integration tests, regression tests, usability tests, and test and review tools."
