@@ -41,4 +41,12 @@ defmodule Sage.Responders.TriggersTest do
     assert String.contains?(text, "https://www.youtube.com/watch?v=rQnYi3z56RE&t=5s")
   end
 
+  @tag start_robot: true, name: "alfred", responders: [{Sage.Responders.Triggers, []}]
+
+  test "!exercism", %{adapter: adapter, msg: msg} do
+    send adapter, {:message, %{msg | text: "!exercism"}}
+    assert_receive {:message, %{text: text}}
+    assert String.contains?(text, "http://exercism.io/teams/wgu/streams")
+  end
+
 end
