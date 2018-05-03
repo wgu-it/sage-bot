@@ -38,6 +38,7 @@ defmodule Sage.Responders.Triggers do
     "noice" => "https://www.youtube.com/watch?v=h3uBr0CCm58",
     "noice-kp" => "https://www.youtube.com/watch?v=rQnYi3z56RE&t=5s",
     "exercism"=> "Want to practice coding problems and see solutions from other WGU students/alumni? Follow this link to join: http://exercism.io . Our team is: http://exercism.io/teams/wgu/streams",
+    "discount"=> "Student Discount List. Need to add a discount to this list? Post in #feedback for changes: https://docs.google.com/document/d/1cU-6kOuv-wGVaDbfY-H369gF0noasYc-p-bNnltKpD4/edit?usp=sharing",
     "freebook" => ""
   }
 
