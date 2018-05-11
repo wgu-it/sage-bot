@@ -457,6 +457,10 @@ defmodule Sage.Support.CourseList do
       name: "Software Quality Assurance",
       desc: "Software Quality Assurance applies a QA focus to every phase of the software development life cycle. This course investigates best practices for quality analysis, quality planning, and testing strategies as they pertain to the everyday practice of software development. Students will come to understand how their work fits into the bigger picture: how QA, testing, and code-writing practices interact within specific process models; the potential impact of new code on existing code or on other applications; the importance of usability and the influence users have on the ultimate success of an application. Students will explore test plans, test cases, unit tests, integration tests, regression tests, usability tests, and test and review tools."
     ],
+    "C868" => [
+      name: "Software Development Capstone",
+      desc: "The capstone assessment challenges students to demonstrate mastery of all the BSITSW program outcomes. Students will develop a software application to solve a problem of their choice constrained only by the technology requirements provided in the assessment DRF."
+    ],
     "CNV1" => [
       name: "Designing Customized Security",
       desc: "Designing Customized Security outlines the sequence of learning activities to help students develop competence in the subject area of securing networks, which deals specifically with Cisco networks. It prepares students for the Cisco 640-553 IINS certification exam."
