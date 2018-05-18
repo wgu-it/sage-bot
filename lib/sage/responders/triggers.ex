@@ -37,6 +37,7 @@ defmodule Sage.Responders.Triggers do
     "labsim" => "Access Net+ Labsim via: http://lrps.wgu.edu/provision/6147901 and Sec+ via: https://lrps.wgu.edu/provision/42540372",
     "noice" => "https://www.youtube.com/watch?v=h3uBr0CCm58",
     "noice-kp" => "https://www.youtube.com/watch?v=rQnYi3z56RE&t=5s",
+    "discount"=> "Student Discount List. Need to add a discount to this list? Post in #feedback for changes: https://docs.google.com/document/d/1cU-6kOuv-wGVaDbfY-H369gF0noasYc-p-bNnltKpD4/edit?usp=sharing",
     "exercism"=> "Want to practice coding problems and see solutions from other WGU students/alumni? Our team is: http://exercism.io/teams/wgu/streams",
     "freebook" => ""
   }
