@@ -457,9 +457,46 @@ defmodule Sage.Support.CourseList do
       name: "Software Quality Assurance",
       desc: "Software Quality Assurance applies a QA focus to every phase of the software development life cycle. This course investigates best practices for quality analysis, quality planning, and testing strategies as they pertain to the everyday practice of software development. Students will come to understand how their work fits into the bigger picture: how QA, testing, and code-writing practices interact within specific process models; the potential impact of new code on existing code or on other applications; the importance of usability and the influence users have on the ultimate success of an application. Students will explore test plans, test cases, unit tests, integration tests, regression tests, usability tests, and test and review tools."
     ],
+    "C867" => [
+      name: "Scripting and Programming - Applications",
+      desc: "In this undergraduate course students explore the various aspects of the C++ programming language by examining its syntax, the development environment, and tools and techniques to solve some real-world problems."
+    ],
     "C868" => [
       name: "Software Development Capstone",
       desc: "The capstone assessment challenges students to demonstrate mastery of all the BSITSW program outcomes. Students will develop a software application to solve a problem of their choice constrained only by the technology requirements provided in the assessment DRF."
+    ],
+    "C949" => [
+      name: "Data Structures and Algorithms I",
+      desc: "Data Structures and Algorithms I covers the fundamentals of dynamic data structures, such as bags, lists, stacks, queues, trees, hash tables, and their associated algorithms. With Python software as the basis, the course discusses object-oriented design and abstract data types as a design paradigm. The course emphasizes problem solving and techniques for designing efficient, maintainable software applications. Students will implement simple applications using the techniques learned. This course has one prerequisite: Software 1."
+    ],
+    "C950" => [
+      name: "Data Structures and Algorithms II",
+      desc: "Data Structures and Algorithms II explores the analysis and implementation of high-performance data structures and supporting algorithms, including graphs, hashing, self-adjusting data structures, set representations, and dynamic programming. The course also introduces students to NP-complete problems. The course discusses how to use Python techniques to implement software solutions for problems of memory management and data compression. This course has one prerequisite: Data Structures and Algorithms I (C949)."
+    ],
+    "C951" => [
+      name: "Introduction to Artificial Intelligence",
+      desc: "Introduction to Artificial Intelligence explores the foundational principles and practices of artificial intelligence (AI), machine learning, and robotics. The course prepares students to analyze relationships, build agents, and create models relevant to AI problems. The prerequisites for this course are Introduction to Probability and Statistics as well as Data Structures and Algorithms II."
+    ],
+    "C952" => [
+      name: "Computer Architecture",
+      desc: "Computer Architecture introduces students to concepts and characteristics of organization and architecture applied to modern computer systems, including performance, processor, memory, I/O, and multiprocessors to optimize system design, performance, and efficiency."
+    ],
+    "C958" => [
+      name: "Calculus I",
+      desc: "Calculus students apply theoretical concepts of calculus to real-world situations, demonstrating a developing mathematical mindset. This course focuses on limits, derivatives, integrals, and differential equations; it also prepares students for Discrete Mathematics. Prerequisites may include an entrance exam that assesses pre-calculus skills, or readiness; alternatively, completion of pre-calculus within the past 3 – 5 years."
+
+    ],
+    "C959" => [
+      name: "Discrete Math I",
+      desc: "Discrete Mathematics 1 is designed to help students develop competence in the use of abstract discrete structures fundamental to computer science. In particular, this course will introduce students to logic and proofs, Boolean algebra and functions, set theory, finite and infinite sequences and series, and relations, graphs and trees. There is an emphasis on applications in computer science. Calculus is a prerequisite for this course."
+    ],
+    "C960" => [
+      name: "Discrete Math II",
+      desc: "Discrete Mathematics II addresses abstract discrete computational methods used in computer science. In particular, this class introduces searching and sorting algorithms, big-O estimates, number theory and cryptography, recursion and induction, counting and advanced counting techniques, discrete probability, and modeling computation. There is also an emphasis on applications in computer science. Discrete Mathematics I is a prerequisite for this course."
+    ],
+    "C964" => [
+      name: "Computer Science Capstone",
+      desc: "The Computer Science Capstone course allows the student to demonstrate their application of the academic and professional abilities developed during the BSCS program. The capstone challenges students to integrate skills and knowledge from all program domains into one project."
     ],
     "CNV1" => [
       name: "Designing Customized Security",
