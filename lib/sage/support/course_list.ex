@@ -495,7 +495,7 @@ defmodule Sage.Support.CourseList do
       desc: "Discrete Mathematics II addresses abstract discrete computational methods used in computer science. In particular, this class introduces searching and sorting algorithms, big-O estimates, number theory and cryptography, recursion and induction, counting and advanced counting techniques, discrete probability, and modeling computation. There is also an emphasis on applications in computer science. Discrete Mathematics I is a prerequisite for this course."
     ],
     "C964" => [
-      name: "Computer Science Capstone,"
+      name: "Computer Science Capstone",
       desc: "The Computer Science Capstone course allows the student to demonstrate their application of the academic and professional abilities developed during the BSCS program. The capstone challenges students to integrate skills and knowledge from all program domains into one project."
     ],
     "CNV1" => [
