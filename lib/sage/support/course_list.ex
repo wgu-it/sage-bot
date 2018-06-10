@@ -441,6 +441,10 @@ defmodule Sage.Support.CourseList do
       name: "Business of IT - Applications",
       desc: "Business of IT – Applications examines Information Technology Infrastructure Library (ITIL) terminology, structure, policies, and concepts. Focusing on the management of Information Technology (IT) infrastructure, development, and operations, students will explore the core principles of ITIL practices for service management to prepare them for careers as IT professionals, business managers, and business process owners. This course has no prerequisites."
     ],
+    "C849" => [
+      name: "Cloud Foundations",
+      desc: "More and more companies are shifting to a cloud computing model of doing business. The Cloud Foundations course focuses on the real-world issues and practical solutions of cloud computing in business and IT. Competency in this course will be demonstrated by the successful completion of the CompTIA Cloud Essentials certification exam."
+    ],
     "C850" => [
       name: "Emerging Technologies",
       desc: "The Emerging Technology course examines emerging technologies, identifies the benefits and drawbacks of technology adoption, and provides students with a process to evaluate technologies. The course will examine three technologies that may have an impact on Information Technology services in the coming years."
