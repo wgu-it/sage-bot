@@ -33,7 +33,7 @@ defmodule Sage.Responders.Rightgif do
         res["url"]
       res ->
         Logger.warn inspect(res)
-        Soz, that's all I've got... ಥ_ಥ
+        # Soz, that's all I've got... ಥ_ಥ
         # Sage.Responders.Giphy.fetch_gif(query)
     end
   end
