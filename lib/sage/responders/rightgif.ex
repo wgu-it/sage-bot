@@ -33,8 +33,8 @@ defmodule Sage.Responders.Rightgif do
         res["url"]
       res ->
         Logger.warn inspect(res)
-        # Backup plan, try giphy... ಥ_ಥ
-        Sage.Responders.Giphy.fetch_gif(query)
+        Soz, that's all I've got... ಥ_ಥ
+        # Sage.Responders.Giphy.fetch_gif(query)
     end
   end
 end
