@@ -461,6 +461,10 @@ defmodule Sage.Support.CourseList do
       name: "Software Quality Assurance",
       desc: "Software Quality Assurance applies a QA focus to every phase of the software development life cycle. This course investigates best practices for quality analysis, quality planning, and testing strategies as they pertain to the everyday practice of software development. Students will come to understand how their work fits into the bigger picture: how QA, testing, and code-writing practices interact within specific process models; the potential impact of new code on existing code or on other applications; the importance of usability and the influence users have on the ultimate success of an application. Students will explore test plans, test cases, unit tests, integration tests, regression tests, usability tests, and test and review tools."
     ],
+    "C859" => [
+      name: "Introduction to Programming in Python",
+      desc: "Introduction to Programming in Python provides the fundamentals of the Python language and its features to control program flow and to manipulate data sets. This course teaches how to develop Python scripts that extract and manipulate data from unstructured data sources. Python libraries including acquisition and configuration are also covered. Scripting and Programming Foundations and Web Development Foundations are prerequisites to this course."
+    ],
     "C867" => [
       name: "Scripting and Programming - Applications",
       desc: "In this undergraduate course students explore the various aspects of the C++ programming language by examining its syntax, the development environment, and tools and techniques to solve some real-world problems."
