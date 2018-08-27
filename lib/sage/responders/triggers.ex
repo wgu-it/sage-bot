@@ -42,7 +42,8 @@ defmodule Sage.Responders.Triggers do
     "freebook" => "",
     "guidelines" => "1. Personal attacks are unacceptable. Bullying or harassment will not be tolerated. \n2. Hate speech is not permitted.\n3. Do not deliberately disrupt the community.\n4. Illegal activity, XXX content, and discussion of politics are not allowed.\n5. No soliciting, advertising, or marketing (unless it’s for a job posting in the #job-listings channel).\n6. Nothing allowed that may be against the WGU Student Code of Conduct.\n7. Use the proper channel for discussions.\n\nSlack members that don’t adhere to these guidelines will be given warnings, and chronic offenders may be removed from the Slack. We want to create the best possible atmosphere for WGU IT students, and keeping our group respectful and accessible is priority.",
     "lynda" => "https://lrps.wgu.edu/provision/11650977",
-    "highfive" => "http://1.media.collegehumor.cvcdn.com/64/33/39bee4f33728e1f54402d858540d373c-weekend-update-high-five.gif"
+    "highfive" => "http://1.media.collegehumor.cvcdn.com/64/33/39bee4f33728e1f54402d858540d373c-weekend-update-high-five.gif",
+    "jetbrains" => "https://www.jetbrains.com/student/"
   }
 
   @trigger_matches Map.keys(@triggers) |> Enum.join("|")
