@@ -39,7 +39,7 @@ defmodule Sage.Support.CourseList do
     ],
     "C173" => [
       name: "Scripting and Programming - Foundations",
-      desc: "This course provides an introduction to programming covering data structures, algorithms, and programming paradigms. The course presents the student with the concept of an object as well as the object-oriented paradigm and its importance. A survey of languages is covered and the distinction between interpreted and compiled languages is introduced."
+      desc: "This course provides an introduction to programming covering data structures, algorithms, and programming paradigms. The course presents the student with the concept of an object as well as the object-oriented paradigm and its importance. A survey of languages is covered and the distinction between interpreted and compiled languages is introduced. https://lrps.wgu.edu/provision/130661796"
     ],
     "C175" => [
       name: "Data Management - Foundations",
