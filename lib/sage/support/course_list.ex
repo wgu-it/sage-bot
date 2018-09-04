@@ -473,6 +473,10 @@ defmodule Sage.Support.CourseList do
       name: "Software Development Capstone",
       desc: "The capstone assessment challenges students to demonstrate mastery of all the BSITSW program outcomes. Students will develop a software application to solve a problem of their choice constrained only by the technology requirements provided in the assessment DRF."
     ],
+    "C917" => [
+      name: "Network Design Foundations - CCDA",
+      desc: "Network Design Foundations explores enterprise environments that require networks designed for performance, availability, and scalability with the flexibility to meet rapidly evolving demands. Skilled IT professionals who possess up-to-date, fundamental network design skills are needed in order to meet these challenges head-on. C246: Fundamentals of Interconnecting Network Devices or Cisco Certified Entry Networking Technician (CCENT) certification is a prerequisite for this course."
+    ],
     "C949" => [
       name: "Data Structures and Algorithms I",
       desc: "Data Structures and Algorithms I covers the fundamentals of dynamic data structures, such as bags, lists, stacks, queues, trees, hash tables, and their associated algorithms. With Python software as the basis, the course discusses object-oriented design and abstract data types as a design paradigm. The course emphasizes problem solving and techniques for designing efficient, maintainable software applications. Students will implement simple applications using the techniques learned. This course has one prerequisite: Software 1."
