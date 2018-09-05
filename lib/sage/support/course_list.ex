@@ -473,6 +473,10 @@ defmodule Sage.Support.CourseList do
       name: "Software Development Capstone",
       desc: "The capstone assessment challenges students to demonstrate mastery of all the BSITSW program outcomes. Students will develop a software application to solve a problem of their choice constrained only by the technology requirements provided in the assessment DRF."
     ],
+    "C923" => [
+      name: "Cloud Applications",
+      desc: "Cloud Applications teaches students to implement and maintain cloud technologies and enables them to jump into a rapidly growing market. As more businesses shift their IT operations to cloud platforms, skills in cloud computing and virtualization have become a frequently required qualification for IT professionals. This course prepares students for the following certification exam: CV0-002 CompTIA Cloud+. While it is strongly recommended that students complete Cloud Foundations (C849) prior to beginning this course, there are no prerequisites."
+    ],
     "C949" => [
       name: "Data Structures and Algorithms I",
       desc: "Data Structures and Algorithms I covers the fundamentals of dynamic data structures, such as bags, lists, stacks, queues, trees, hash tables, and their associated algorithms. With Python software as the basis, the course discusses object-oriented design and abstract data types as a design paradigm. The course emphasizes problem solving and techniques for designing efficient, maintainable software applications. Students will implement simple applications using the techniques learned. This course has one prerequisite: Software 1."
