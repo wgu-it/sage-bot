@@ -46,7 +46,7 @@ defmodule Sage.Support.CourseList do
       desc: "This course introduces students to the concepts and terminology used in the field of data management. They will be introduced to Structured Query Language (SQL) and will learn how to use Data Definition Language (DDL) and Data Manipulation Language (DML) commands to define, retrieve, and manipulate data. This course covers differentiations of data—structured vs. unstructured and quasi-structured (relational, hierarchical, XML, textual, visual, etc); it also covers aspects of data management (quality, policy, storage methodologies). Foundational concepts of data security are included."
     ],
     "C176" => [
-      name: "Business of IT - Project Management",
+      name: "Business of IT - Project Management (CompTIA Project+)",
       desc: "This course introduces the student to the project management & business analysis process within the context of an IT project. Fundamental concepts of project management will be covered including all phase of project management during a system life cycle including business analysis, requirements capturing, issue tracking, and release planning. Additional topics to include: development environments (dev, integration, QA, production), help desk and support, IT planning for business continuity. This course prepares students for the following certification exam: CompTIA Project+."
     ],
     "C178" => [
@@ -202,11 +202,11 @@ defmodule Sage.Support.CourseList do
       desc: "The final Master's exam will be a comprehensive oral"
     ],
     "C393" => [
-      name: "IT Foundations",
+      name: "IT Foundations (CompTIA A+ - Hardware)",
       desc: "IT Foundations is the first course in a two-part series preparatory for the CompTIA A+ exam, Part I. Students will gain an understanding of personal computer components and their functions in a desktop system, as well as computer data storage and retrieval; classifying, installing, configuring, optimizing, upgrading, and troubleshooting printers, laptops, portable devices, operating systems, networks, and system security; recommending appropriate tools, diagnostic procedures, preventative maintenance and troubleshooting techniques for personal computer components in a desktop system; strategies for identifying, preventing, and reporting safety hazards and environmental/human accidents in"
     ],
     "C394" => [
-      name: "IT Applications",
+      name: "IT Applications (CompTIA A+ - Applications)",
       desc: "IT Applications is a continuation of the IT Foundations course preparatory for the CompTIA A+ exam, Part II. Students will gain an understanding of personal computer components and their functions in a desktop system. Also covered is computer data storage and retrieval, including classifying, installing, configuring, optimizing, upgrading, and troubleshooting printers, laptops, portable devices, operating systems, networks, and system security. Other areas include recommending appropriate tools, diagnostic procedures, preventative maintenance and troubleshooting techniques for personal computer components in a desktop system. The course then finished with strategies for identifying, preventing, and reporting safety hazards and environmental/human accidents in a technological environments, and effective communication with colleagues and clients as well as job-related professional behavior."
     ],
     "C434" => [
@@ -254,7 +254,7 @@ defmodule Sage.Support.CourseList do
       desc: "Web Technologies focuses on: using and updating web client software; web page creation and programming languages; dynamic web page fundamentals: e-commerce infrastructure; and identifying suspicious network activity and selecting the appropriate strategy to counter it. This course prepares students for the following certification exam: CIW Web Design Specialist."
     ],
     "C480" => [
-      name: "Networks",
+      name: "Networks (CompTIA Network+)",
       desc: "Networks focuses on: network topologies including: protocols, ports, addressing schemes, routing, and wireless communication standards; physical and logical topologies, including wiring standards; differentiating, installing, and configuring network devices; and troubleshooting network connectivity. This course prepares students for the following certification exam: CompTIA Network+."
     ],
     "C482" => [
@@ -394,7 +394,7 @@ defmodule Sage.Support.CourseList do
       desc: "This course prepares students for the CIW Advanced HTML5 and CSS3 Specialist certification exam. This course builds upon a student's manual coding skills by teaching how to develop web documents and pages using the Web Development Trifecta: HTML5 (Hypertext Markup Language version 5) and CSS3 (Cascading Style Sheets version 3) and JavaScript. Students will utilize the skills learned in this course to create web documents and pages that easily adapt to display on both traditional and mobile devices. In addition, students will learn techniques for code validation and testing, form creation, inline form field validation, and mobile design for browsers and apps, including Responsive Web Design (RWD)"
     ],
     "C779" => [
-      name: "Web Development Foundations - CIW Site Development Fundamentals",
+      name: "Web Development Foundations (Certified Internet Webmaster – Site Development Associate (CIW-SDA)",
       desc: "This course introduces students to web design and development by presenting them with HTML5 and CSS, the foundational languages of the web, by reviewing media strategies, and by using tools and techniques commonly employed in web development."
     ],
     "C836" => [
@@ -402,15 +402,15 @@ defmodule Sage.Support.CourseList do
       desc: "This course lays the foundation for understanding terminology, principles, processes and best practices of information security at local and global levels. It further provides an overview of basic security vulnerabilities and countermeasures for protecting information assets through planning and administrative controls within an organization. ",
     ],
     "C837" => [
-      name: "Managing Web Security - CIW WSA",
+      name: "Managing Web Security (Certified Internet Webmaster – Web Security Associate (CIW-WSA)",
       desc: "Almost all businesses and organizations require a web presence. The security needs, demands, and defenses for these online environments differ from those of an isolated single computer or intranet. This course introduces best practices for preventing security breaches by applying web security protocols, firewalls, and system configurations. This course prepares students for the Web Security Associate (CIW WSA) certification exam",
     ],
     "C838" => [
-      name: "Managing Cloud Security - ISC2 CCSP",
+      name: "Managing Cloud Security (Certified Cloud Security Professional (CCSP))",
       desc: "Many of today’s companies and organizations have outsourced data management, availability, and operational processes through cloud computing. In this course, students design solutions for cloud-based platforms and operations that maintain data availability while protecting the confidentiality and integrity of information. This includes security controls, disaster recovery plans, and continuity management plans that address physical, logical, and human factors. This course prepares students for the Certified Cloud Security Professional (ISC2 CCSP) certification exam.",
     ],
     "C839" => [
-      name: "Introduction to Cryptography - EC-Council ECES",
+      name: "Introduction to Cryptography (Certified Encryption Specialist (EC-Council ECES))",
       desc: "This course provides students with knowledge of cryptographic algorithms, protocols, and their uses in the protection of information in various states. This course prepares students for the Certified Encryption Specialist (EC-Council ECES) certification exam.",
     ],
     "C840" => [
@@ -422,7 +422,7 @@ defmodule Sage.Support.CourseList do
       desc: "Security information professionals have the role and responsibility for knowing and applying ethical and legal principles and processes that define specific needs and demands to assure data integrity within an organization. This course addresses the laws, regulations, authorities, and directives that inform the development of operational policies, best practices, and training to assure legal compliance and to minimize internal and external threats. Students analyze legal constraints and liability concerns that threaten information security within an organization and develop disaster recovery plans to assure business continuity.",
     ],
     "C842" => [
-      name: "Cyber Defense and Countermeasures - EC-Council ECIH",
+      name: "Cyber Defense and Countermeasures (Certified Incident Handler (EC-Council ECIH))",
       desc: "Traditional defenses such as firewalls, security protocols, and encryption sometimes fail to stop attackers determined to access and compromise data. This course provides the fundamental skills to handle and respond to the computer security incidents in an information system. The course addresses various underlying principles and techniques for detecting and responding to current and emerging computer security threats. Students learn how to handle various types of incidents, risk assessment methodologies, and various laws and policy related to incident handling. This course prepares students for the Certified Incident Handler (EC-Council ECIH) certification exam",
     ],
     "C843" => [
@@ -434,11 +434,11 @@ defmodule Sage.Support.CourseList do
       desc: "The continual evolution of technology means that cybersecurity professionals must be able to analyze and evaluate new technologies in information security such as wireless, mobile, and internet technologies. Students review the adoption process which prepares an organization for the risks and challenges of implementing new technologies. This course focuses on comparison of evolving technologies to address the security requirements of an organization. Students learn underlying principles critical to the operation of secure networks and adoption of new technologies.",
     ],
     "C845" => [
-      name: "Information Systems Security - ISC2 SSCP",
+      name: "Information Systems Security (Systems Security Certified Practitioner (SSCP))",
       desc: "IT security professionals must be prepared for the operational demands and responsibilities of security practitioners, including authentication, security testing, intrusion detection and prevention, incident response and recovery, attacks and countermeasures, cryptography, and malicious code countermeasures. This course provides a comprehensive, up-to-date global body of knowledge that ensures students have the right information security knowledge and skills to be successful in IT operational roles to mitigate security concerns and guard against the impact of malicious activity. Students demonstrate how to manage and restrict access control systems; administer policies, procedures, and guidelines that are ethical and compliant with laws and regulations; implement risk management and incident handling processes; execute cryptographic systems to protect data; manage network security; and analyze common attack vectors and countermeasures to assure information integrity and confidentiality in various systems. This course prepares students for the Systems Security Certified Practitioner (ISC2 SSCP) certification exam",
     ],
     "C846" => [
-      name: "Business of IT - Applications",
+      name: "Business of IT - Applications (ITIL Foundation)",
       desc: "Business of IT – Applications examines Information Technology Infrastructure Library (ITIL) terminology, structure, policies, and concepts. Focusing on the management of Information Technology (IT) infrastructure, development, and operations, students will explore the core principles of ITIL practices for service management to prepare them for careers as IT professionals, business managers, and business process owners. This course has no prerequisites."
     ],
     "C849" => [
