@@ -82,12 +82,12 @@ defmodule Sage.Responders.Triggers do
 
     {:ok, resp} = :httpc.request(:get, {'https://www.packtpub.com/packt/offers/free-learning', []}, [], [body_format: :binary])
     {{_, 200, 'OK'}, _headers, body} = resp
-    title = Floki.find(body, ".dotd-title h2")
+    title = Floki.find(body, ".product__title")
     |> Floki.text()
     |> String.trim()
-    description = Floki.find(body, ".dotd-main-book-summary div:nth-of-type(3)")
+    author = Floki.find(body, ".product__author")
     |> Floki.text()
     |> String.trim()
-    result = "Today's free book is: \n" <> title <> "\n" <> description <> "\nhttps://www.packtpub.com/packt/offers/free-learning"
+    result = "Today's free book is: \n" <> title <> "\nBy:" <> author <> "\nhttps://www.packtpub.com/packt/offers/free-learning"
   end
 end
