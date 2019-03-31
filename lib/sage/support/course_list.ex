@@ -506,6 +506,10 @@ defmodule Sage.Support.CourseList do
       name: "Computer Science Capstone",
       desc: "The Computer Science Capstone course allows the student to demonstrate their application of the academic and professional abilities developed during the BSCS program. The capstone challenges students to integrate skills and knowledge from all program domains into one project."
     ],
+    "C995" => [
+      name: "SQL for Data Analysis",
+      desc: "In this course students gain the knowledge and tools necessary to master the SQL language. This course uses MySQL."
+    ],
     "CNV1" => [
       name: "Designing Customized Security",
       desc: "Designing Customized Security outlines the sequence of learning activities to help students develop competence in the subject area of securing networks, which deals specifically with Cisco networks. It prepares students for the Cisco 640-553 IINS certification exam."
