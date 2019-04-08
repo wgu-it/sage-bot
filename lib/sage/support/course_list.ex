@@ -506,6 +506,14 @@ defmodule Sage.Support.CourseList do
       name: "Computer Science Capstone",
       desc: "The Computer Science Capstone course allows the student to demonstrate their application of the academic and professional abilities developed during the BSCS program. The capstone challenges students to integrate skills and knowledge from all program domains into one project."
     ],
+    "C969" => [
+      name: "Software II – Advanced C#",
+      desc: "Software II - Advanced C# refines object-oriented programming expertise and builds database and file server application development skills. You will learn about and put into action lambda expressions, collections, and input/output to develop software with C# that meets business requirements. This course requires intermediate expertise in object-oriented programming and the C# language. The prerequisite for this course is Software I - C#."
+    ],
+    "C971" => [
+      name: "Mobile Application Development Using C#",
+      desc: "Mobile Application Development Using C# introduces students to programming for mobile devices. Building on students previous knowledge of programming in C#, this course investigates Xamarin.Forms and how it can be used to build a mobile application. This course explores a broad range of topics, including mobile user interface design and development; building applications that adapt to different mobile devices and platforms; managing data using a local database; and consuming REST-based web services. There are several prerequisites for this course: Software I and II, and UI Design."
+    ],
     "CNV1" => [
       name: "Designing Customized Security",
       desc: "Designing Customized Security outlines the sequence of learning activities to help students develop competence in the subject area of securing networks, which deals specifically with Cisco networks. It prepares students for the Cisco 640-553 IINS certification exam."
